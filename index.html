@@ -14,6 +14,8 @@
         }
 
         let computerSelection = computerPlay();
+        let playerSelection = prompt('Rock - Paper - Scissors...Shoot!');
+        playerSelection.toLowerCase();
 
         function playRound(playerSelection, computerSelection) {
             if(playerSelection === computerSelection) {
@@ -32,6 +34,11 @@
                 return 'You Lose! Paper beats rock.';
             }
         }
+
+        let playerScore = 0;
+        let computerScore = 0;
+        let gameActive = false;
+        
     </script>
 </body>
 </html>
