@@ -8,15 +8,17 @@
 </head>
 <body>
     <script>
-        let playerScore = 0;
-        let computerScore = 0;
-        const choice = ['rock', 'paper', 'scissors'];
+        let playerScore = 0; //A variable to store the score for the player
+        let computerScore = 0; //A variable to store the score for the computer
+        const choice = ['rock', 'paper', 'scissors']; //An array to store the game choice
 
+        /*Function to get the computers move. The function uses Math.floor() and Math.random() to find the option from the choice array.*/
         function computerPlay() {
             let computerSelection = choice[Math.floor(Math.random() * choice.length)]
             return computerSelection;
         }
 
+        /*Function to a play a round of the game. The function passes two parameters. It allows for case insensitivity for the user input. The function uses an if statement to decide the winning move and add to the scoreboard.*/
         function playRound(playerSelection, computerSelection) {
             playerSelection = playerSelection.toLowerCase();
 
@@ -43,7 +45,9 @@
             }
         }
 
+        /*This function is the gameplay for a best of 5 game.*/
         function game() {
+            //A do while loop to iterate through the game. It outputs the score and winner of each round.
             do{
                 let playerSelection = prompt('Rock-Paper-Scissors...Shoot!');
                 let computerSelection = computerPlay();
@@ -53,12 +57,14 @@
                 console.log(score);
             }while(playerScore < 5 && computerScore < 5);
 
+            //An if statement to output an overall winner statement. 
             if(playerScore = 5) {
                 console.log('You Win!');
             }else if(computerScore = 5) {
                 console.log('Bummer, the Computer Wins!')
             }
 
+            //An if statement to restart or end game.
             if(playerScore == 5 || computerScore == 5) {
                 let restart = prompt('Would you like to play again? Yes or No');
                 restart = restart.toLowerCase;
