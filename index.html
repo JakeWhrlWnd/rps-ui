@@ -5,21 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Rock-Paper-Scissors...SHOOT!</h1>
-    <img src="#" alt="play button">
-    <img src="#" alt="restart button">
-    <img src="#" alt="rock button">
-    <img src="#" alt="paper button">
-    <img src="#" alt="scissors button">
-    <img src="#" alt="player icon">
-    <p></p>
-    <p>vs.</p>
-    <p></p>
-    <img src="#" alt="computer icon">
-    <p></p>
-    <p>Created by James Norris</p>
+    <div class="header">
+        <div class="heading">
+            <h1>Rock-Paper-Scissors...SHOOT!</h1>
+        </div>
+        <div class="game-play">
+            <div class="play-button">
+                <img src="#" alt="play button">
+            </div>
+            <div class="restart-button">
+                <img src="#" alt="restart button">
+            </div>
+        </div>
+    </div>
+
+    <div class="moves">
+        <img src="#" alt="rock button">
+        <img src="#" alt="paper button">
+        <img src="#" alt="scissors button">
+    </div>
+
+    <div class="scoreboard">
+        <img src="#" alt="player icon">
+        <p></p>
+        <p>vs.</p>
+        <p></p>
+        <img src="#" alt="computer icon">
+    </div>
+
+    <div class="results">
+        <p></p>
+    </div>
+
+    <div class="footer">
+        <p>Created by James Norris</p>
+    </div>
+
     <!-- <script>
         let playerScore = 0; //A variable to store the score for the player
         let computerScore = 0; //A variable to store the score for the computer

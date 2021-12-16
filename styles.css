@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oswald&display=swap');
+
+/*
+-- COLOR SCHEME --
+dodgerblue - #1e90ff;
+cornflowerblue - #6495ed;
+orangered - #ff4500;
+dimgrey - #696969;
+darkgrey - #a9a9a9;
+red - #ff0000;
+springgreen - #00ff7f;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1em;
+    font-family: inherit;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: darkgrey;
+    color: dimgrey;
+}
+
+.header {
+    background-color: dodgerblue;
+    color: darkslategrey;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: 'Bakbak One', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.game-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button,
+.restart-button {
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    padding: 4em;
+}
+
+.moves
+
+.scoreboard
+
+.results
+
+.footer {
+}
