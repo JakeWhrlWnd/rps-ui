@@ -4,118 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors Game</title>
+    <title>RPS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <div class="heading">
-            <h1>Rock-Paper-Scissors...SHOOT!</h1>
-        </div>
-        <div class="game-play">
-            <div class="play-button">
-                <img src="#" alt="play button">
-            </div>
-            <div class="restart-button">
-                <img src="#" alt="restart button">
-            </div>
-        </div>
-    </div>
+    <header>
 
-    <div class="moves">
-        <img src="#" alt="rock button">
-        <img src="#" alt="paper button">
-        <img src="#" alt="scissors button">
-    </div>
+    </header>
+    
+    <main>
+        
+        <section>
 
-    <div class="scoreboard">
-        <img src="#" alt="player icon">
-        <p></p>
-        <p>vs.</p>
-        <p></p>
-        <img src="#" alt="computer icon">
-    </div>
+        </section>
+        
+        <section>
 
-    <div class="results">
-        <p></p>
-    </div>
+        </section>
+        
+        <section>
 
-    <div class="footer">
-        <p>Created by James Norris</p>
-    </div>
+        </section>
+    
+    </main>
+    
+    <footer>
 
-    <!-- <script>
-        let playerScore = 0; //A variable to store the score for the player
-        let computerScore = 0; //A variable to store the score for the computer
-        const choice = ['rock', 'paper', 'scissors']; //An array to store the game choice
-
-        /*Function to get the computers move. The function uses Math.floor() and Math.random() to find the option from the choice array.*/
-        function computerPlay() {
-            let computerSelection = choice[Math.floor(Math.random() * choice.length)]
-            return computerSelection;
-        }
-
-        /*Function to a play a round of the game. The function passes two parameters. It allows for case insensitivity for the user input. The function uses an if statement to decide the winning move and add to the scoreboard.*/
-        function playRound(playerSelection, computerSelection) {
-            playerSelection = playerSelection.toLowerCase();
-
-            if(playerSelection === computerSelection) {
-                console.log('It\'s a draw.');
-            }else if((playerSelection == 'rock') && (computerSelection == 'scissors')) {
-                playerScore = playerScore + 1;
-                console.log('You Win! Rock beats Scissors.');
-            }else if((playerSelection == 'scissors') && (computerSelection == 'paper')) {
-                playerScore = playerScore + 1;
-                console.log('You Win! Scissors beat Paper.');
-            }else if((playerSelection == 'paper') && (computerSelection == 'rock')) {
-                playerScore = playerScore + 1;
-                console.log('You Win! Paper beats Rock.');
-            }else if((playerSelection == 'scissors') && (computerSelection == 'rock')) {
-                computerScore = computerScore + 1;
-                console.log('You Lose! Rock beats Scissors.');
-            }else if((playerSelection == 'paper') && (computerSelection == 'scissors')) {
-                computerScore = computerScore + 1;
-                console.log('You Lose! Scissors beat Paper.');
-            }else if((playerSelection == 'rock') && (computerSelection == 'paper')) {
-                computerScore = computerScore + 1;
-                console.log('You Lose! Paper beats Rock.');
-            }
-        }
-
-        /*This function is the gameplay for a best of 5 game.*/
-        function game() {
-            //A do while loop to iterate through the game. It outputs the score and winner of each round.
-            do{
-                let playerSelection = prompt('Rock-Paper-Scissors...Shoot!');
-                let computerSelection = computerPlay();
-
-                playRound(playerSelection, computerSelection)
-                let score = 'The score is ' + playerScore + ' to ' + computerScore + ' .';
-                console.log(score);
-            }while(playerScore < 5 && computerScore < 5);
-
-            //An if statement to output an overall winner statement. 
-            if(playerScore = 5) {
-                console.log('You Win!');
-            }else if(computerScore = 5) {
-                console.log('Bummer, the Computer Wins!')
-            }
-
-            //An if statement to restart or end game.
-            if(playerScore == 5 || computerScore == 5) {
-                let restart = prompt('Would you like to play again? Yes or No');
-                restart = restart.toLowerCase;
-                if(restart === true) {
-                    playerScore = 0;
-                    computerScore = 0;
-                    game();
-                }else if(restart === false) {
-
-                }
-            }
-        }
-
-        game();
-    </script> -->
+    </footer>
 </body>
 </html>
