@@ -16,18 +16,18 @@
         
         <section class="btn-container">
                 <!-- Rock -->
-                <p class="btn btn-label">R</p>
+                <p id="rock" class="btn btn-label">R</p>
                 <!-- Paper -->
-                <p class="btn btn-label">P</p>
+                <p id="paper" class="btn btn-label">P</p>
                 <!-- Scissors -->
-                <p class="btn btn-label">S</p>
+                <p id="scissors" class="btn btn-label">S</p>
         </section>
         
         <section class="score-container">
                 <p class="player plyr-label">P1</p>
-                <p class="player score plyr-label">0</p>
+                <p id="player-score" class="player score plyr-label">0</p>
                 <p class="player plyr-label">VS.</p>
-                <p class="player score plyr-label">0</p>
+                <p id="computer-score" class="player score plyr-label">0</p>
                 <p class="player plyr-label">CP</p>
         </section>
         
@@ -36,10 +36,13 @@
                 <h2>Results:</h2>
             </div>
             <div class="results">
-                <p>Waiting for you to make a choice.</p>
+                <p id="results">Waiting for you to make a choice.</p>
+                <button id="restart" class="restart">Restart</button>
             </div>
         </section>
     
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

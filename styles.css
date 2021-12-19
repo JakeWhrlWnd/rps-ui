@@ -41,6 +41,16 @@ body {
     border: 5px solid dimgray;
 }
 
+.btn:hover {
+    background-color: dimgray;
+    color: aliceblue;
+}
+
+.btn:active {
+    background-color: orangered;
+    color: dimgray;
+}
+
 .btn-label {
     font-size: 7rem;
 }
@@ -78,6 +88,22 @@ body {
 .results {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
+}
+
+.restart {
+    visibility: hidden;
+    background-color: orangered;
+    border: none;
+    color: aliceblue;
+    font-family: 'Bakbak One', Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    font-size: 1.2rem;
+}
+
+.restart:hover {
+    background-color: dimgray;
 }
 
 
