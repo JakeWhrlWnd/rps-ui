@@ -1,1 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oswald&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    color: dimgray;
+    font-family: 'Bakbak One', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.header {
+    margin: 40px 0;
+}
+
+.title {
+    font-size: 3.5rem;
+    padding: 5px 0;
+}
+
+.game-container {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    width: 200px;
+    height: 200px;
+    border: 5px solid dimgray;
+}
+
+.btn-label {
+    font-size: 7rem;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.player {
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+    font-size: 3rem;
+}
+
+.score {
+    background-color: dimgray;
+    color: aliceblue;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.results-container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+}
+
+.results-label {
+    font-size: 2rem;
+}
+
+.results {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
 
